@@ -2,31 +2,31 @@
 -> No
 
 What is the data type of “2”?
--> integer
+-> integer	/-> string
 
 ‘hello’ is the same as “hello”
 -> Yes
 
 A variable can only hold number values.
--> Yes
+-> Yes	/-> No
 
 After creation, we can change the value of a const
 -> No
 
 After creation, we can change the value of a let.
--> No
+-> No	/-> Yes
 
 “true” is a boolean value.
--> Yes
+-> Yes	/-> No
 
 null and undefined are the same type.
 -> No
 
 Why do we use an array for?
-->
+-> To organize values on a list.
 
 How can I get the second element of an array?
-->
+-> arr[1]
 
 How can I access the name property of an object player?
--> 
+-> player["name"]
