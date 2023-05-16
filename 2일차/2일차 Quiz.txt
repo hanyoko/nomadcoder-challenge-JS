@@ -1,0 +1,32 @@
+2 and 2.2 are both integers.
+-> No
+
+What is the data type of “2”?
+-> integer
+
+‘hello’ is the same as “hello”
+-> Yes
+
+A variable can only hold number values.
+-> Yes
+
+After creation, we can change the value of a const
+-> No
+
+After creation, we can change the value of a let.
+-> No
+
+“true” is a boolean value.
+-> Yes
+
+null and undefined are the same type.
+-> No
+
+Why do we use an array for?
+->
+
+How can I get the second element of an array?
+->
+
+How can I access the name property of an object player?
+-> 
