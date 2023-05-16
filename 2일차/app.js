@@ -38,4 +38,4 @@ var d = 9;
 //물론, var을 사용하는 것은 출력에 문제가 되지 않지만 새롭고 더 나은 것을 따른 것이 더 좋다 !
 
 //규칙 : 기본적으로 const를 쓰고 필요할 때만 let을 쓰되, var은 쓰지 말 것
-//=> 항상 const, 가끔 let, Never Use var 
+//=> 항상 const, 가끔 let, Never Use var

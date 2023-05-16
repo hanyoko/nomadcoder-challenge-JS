@@ -16,5 +16,4 @@ let something;
 //variable은 존재하지만 값은 존재하지않는다.
 
 console.log(amIFat);
-console.log(something); 
-  
+console.log(something);
