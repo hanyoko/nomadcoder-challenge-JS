@@ -1,0 +1,124 @@
+23/05/18
+
+콘솔창에 document 라고 치면 html의 object를 확인할 수 있다.
+
+console.dir(document)을 입력한 후 title을 확인하면,
+html의 title에 들어간 문자를 확인할 수 있다.
+document = 많은 것들이 들어간 object
+
+- console.dir(document)와 console.log(document)의 차이점은 
+dir은 객체의 속성을 확인하고, log는 객체의 요소를 확인하는 것.
+
+document.title
+'Document'
+
+javascript을 이용해서 title을 가져올 수 있다.
+
+<title>Momentum App</title> 
+title을 수정한 후, 출력하면
+document.title
+'Momentum App'
+수정되어 출력된다.
+
+document.title = "Hi"
+'Hi'
+javascript를 이용해서 변경도 가능하다.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+</head>
+<body>
+    <h1 autofocus class="hello" id="title">Grab me !</h1>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+콘솔창 출력 
+-> h1#title.hello
+
+title.innerText = "Got you!";
+를 입력하면 html에는 <title>Momentum App</title> 이지만
+콘솔창으로 확인하면 <h1 autofocus="" class="hello" id="title">Got you!</h1> 로 변경된 것을 확인할 수 있다.
+
+-----------------------------------------------------------------------------------------------------------
+const title = document.getElementById("something");
+
+title.innerText = "Got you!";
+
+console.log(title.className);
+
+Uncaught TypeError: Cannot set properties of null (setting 'innerText')
+null의 innerText 프로퍼티를 바꿀 수 없다.
+
+title이 존재하지 않으니 title 내부의 innerText를 호출하지마십시오 라고 알려주면 좋지만 위와 같이 알려준다..
+const title로 설정한 값이 null이라는 뜻
+
+
+-------------------------------------------------------------------
+getElementById : id명으로 값을 가져온다.
+만약 querySelector를 이용해 id 값을 가져오려면 document.querySelector("#hello")를 하면된다.
+querySelector : class명으로 첫번째 element를 가져온다 
+querySelectorAll : 이 selector 안의 조건에 부합하는 모든 element를 가져다준다.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+</head>
+<body>
+    <div class="hello">
+        <h1>Grab me ! 1</h1>
+    </div>
+    <div class="hello">
+        <h1>Grab me ! 2</h1>
+    </div>
+    <div class="hello">
+        <h1>Grab me ! 3</h1>
+    </div>
+    
+    <script src="./app3.js"></script>
+</body>
+</html>
+
+const title = document.querySelector(".hello h1")
+
+console.log(title);
+
+출력했을 때는 첫번째의 Grab me ! 1만 출력된다.
+querySelector를 사용할 때는 많은 태그들 중 첫번째의 element만 가져온다.
+
+만약, 세 개 모두 가져오고 싶다면 
+querySeletorAll를 사용하면 된다
+
+const title = document.querySelectorAll(".hello h1")
+
+console.log(title);
+
+NodeList(3) [h1, h1, h1]
+
+---------------------------------------------------------
+const title = document.querySelector("div.hello:first-child h1");
+
+console.dir(title);
+
+function handleTitleClick(){
+    console.log("title was clicked!");
+}
+
+
+
+// title.style.color="blue";       //색깔을 blue로 변경
+title.addEventListener("click", handleTitleClick);
+
+handleTitleClick()
+
+클릭했을 때 콘솔창에 title was clicked!가 출력
