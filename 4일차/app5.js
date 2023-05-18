@@ -23,14 +23,16 @@ function handleWindowCopy(){
 function handleWindowOffline(){
     alert("SOS no WIFI");
 }
-funtion
+function handleWindowOnline(){
+    alert("ALL GOOD !");
+}
 
 // title.style.color="blue";       //색깔을 blue로 변경
-h1.addEventListener("click", handleTitleClick);
-h1.addEventListener("mouseenter", handleMouseEnter);
-h1.addEventListener("mouseleave", handleMouseLeave);
+h1.addEventListener("click", handleTitleClick);             //h1을 클릭할 때
+h1.addEventListener("mouseenter", handleMouseEnter);        //h1에 마우스를 올릴 때
+h1.addEventListener("mouseleave", handleMouseLeave);        //h1에서 마우스가 떠날 때
 
-window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnline);
+window.addEventListener("resize", handleWindowResize);      //window 사이즈를 조절할 때
+window.addEventListener("copy", handleWindowCopy);          //window에서 복사를 할 때
+window.addEventListener("offline", handleWindowOffline);    //wifi 연결을 해제했을 때
+window.addEventListener("online", handleWindowOnline);      //wifi 연결을 했을 때

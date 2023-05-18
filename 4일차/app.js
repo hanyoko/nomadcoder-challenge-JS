@@ -1,8 +1,7 @@
-const title = document.getElementById("title");
+const h1 = document.querySelector("hello");
 
-console.dir(title);
+function superEventHandle(){
+    h1.style.color = "green";
+}
 
-title.innerText = "Got you!";
-
-console.log(title.id);          //title id를 출력
-console.log(title.className);   //title className을 출력
+h1.addEventListener("mouseenter", superEventHandle);
