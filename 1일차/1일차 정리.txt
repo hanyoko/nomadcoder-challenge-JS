@@ -1,4 +1,4 @@
-23/05/15
+23/05/15 1일차 정리
 Nomadcoder JS Challenge
 
 How many programming languages can you use on the Backend?
@@ -30,4 +30,6 @@ How can we 'run' JS files on the browser?
 
 What can we do with the console of the browser?
 -> We can write Javascript code.
+
+
 
