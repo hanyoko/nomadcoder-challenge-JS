@@ -5,4 +5,6 @@
 변수.classList.add("className") 추가
 변수.classList.toggle("className") 추가와 제거
 -----------------------------------------------------------------------
+
+5일차 과제
 https://codesandbox.io/s/empty-blueprint-forked-plqt5g
