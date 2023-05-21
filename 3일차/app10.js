@@ -30,11 +30,23 @@ if(isNaN(age) || age < 0){
 //}
 else if (age > 50 && age <= 80){
     console.log("You should exercise");
+}else if (age === 100){ //=== : age가 100이라면
+    console.log("wow you are wise.");
 }else if (age > 80){
     console.log("You can do whatever you want.");
-} else {
+}//else if (age !== 100){   // age은 100이 아니다.
+    //console.log("dd")
+//}
+else {
     console.log("You can't drink.");
 }
+
+if ((a && b) || (c && d) || (x && w) ){
+    //true      false       false
+    //작동할까 ? -> Yes 
+    //why? -> || OR 연산자이기 때문에 한가지 조건만 부합해도 작동한다.
+}
+
 
 //OR
 // true || true === true

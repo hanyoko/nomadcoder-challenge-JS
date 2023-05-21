@@ -14,3 +14,84 @@ function은 어떤 코드를 캡슐화 해서, 실행을 여러번 할 수 있�
 argument는 function을 실행하는 동안 어떤 정보를 function에게 보낼 수 있는 방법이다.
 
 function 실행 버튼을 누르면서 뭔가를 보내는 방법
+
+//반복되는 콘솔을 쓰는 코드는 좋은 코드가 아니다
+
+//function
+//argument는 function을 실행하는 동안 어떤 정보를 function에게 보낼 수 있는 방법이다.
+function sayHello(){
+    console.log("Hello my name is C");
+}
+
+alert();
+console.log();
+//log로 보내려면 ("")사이에 넣으면 된다.
+
+//같은 방법으로 function에 보낼 수 있다.
+sayHello("yo");
+sayHello("han");
+sayHello("ko");
+-------------------------------------------------------------
+
+//function
+//바깥 세상에서 무언가를 받는 방법
+//argument는 하나만 받을 수 있는 것이 아니라, 여러 개를 받을 수 있다.
+function sayHello(nameOfPerson, age){
+    console.log("Hello my name is " + nameOfPerson + " ane I'm " + age);
+}
+
+
+sayHello("yo", 10);
+sayHello("han", 23);
+sayHello("ko", 21);
+----------------------------------------------------------
+
+function plus(a, b){
+    //function이 데이터를 받는 방법 
+    console.log(a + b);
+}
+
+plus(5,5);
+//데이터를 function 안으로 보내는 법
+--------------------------------------------------------
+
+const a = 5;
+// const isYohanFat = true;
+let isYohanFat = true;
+//true, false = boolean
+//null은 비어있는 값 
+
+console.log(a);
+isYohanFat = false;
+//값을 변경할 수 없다. 왜냐하면 const로 변수를 설정했기 때문에 !
+//값을 변경하고 싶다면 let으로 변수 설정
+-------------------------------------------------------------------
+
+// const days = [1, 2, false, true, null, undefined, "text", me];
+// array 안에 데이터 담기
+
+const toBuy = ["potato", "tomato", "pizza"];
+
+console.log(toBuy); //(3) ['potato', 'tomato', 'pizza']
+toBuy[2] = "water"; //[2] 배열의 값 변경하기
+console.log(toBuy); //(3) ['potato', 'tomato', 'water']
+toBuy.push("meat"); //배열에 meat 추가하기
+console.log(toBuy);
+-----------------------------------------------------------
+
+//console.log(isNaN(age));    //숫자는 false, 문자는 true
+//isNaN은 boolean을 반환
+
+// console.log(age, parseInt(age));
+
+// console.log(typeof "15", typeof parseInt("15"));
+//string number
+
+// if(condition){  //condition 자리에는 true 또는 false만 가능하다.
+//     //condition === true
+// }else{
+//     //condition === false
+// }
+
+// "lalalala"  = NaN
+// 12
