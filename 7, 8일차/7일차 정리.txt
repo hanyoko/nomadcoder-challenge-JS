@@ -46,3 +46,7 @@ loginButton.addEventListener("click", onLoginBtnClick);
 -------------------------------------------------
 
 Uncaught TypeError: Cannot read properties of null (reading 'addEventListener')
+
+
+--------------------------------------------------
+localStorage 뒤에 .removeItem / .getItem / .setItem 
