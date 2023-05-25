@@ -1,0 +1,59 @@
+23/05/25
+
+Math.random() 랜덤 소수값을 출력
+
+Math.random() * 10
+2.4298366059047627
+Math.random() * 10
+5.255510557131298
+Math.random() * 10
+0.31424366268082427
+Math.random() * 10
+9.495727408622889
+Math.random() * 10
+6.131064183585471
+Math.random() * 10
+6.541722754852404
+
+Math.round() 값을 반올림
+Math.round(0.4)
+0
+Math.round(3.9)
+4
+
+Math.ceil() .0 빼고는 전부 숫자를 올림값
+Math.ceil(1.0)
+1
+Math.ceil(1.1)
+2
+Math.ceil(1.5)
+2
+Math.ceil(1.9)
+2
+
+Math.floor() 소수점을 제외한 값
+Math.floor(1.1)
+1
+Math.floor(1.99999)
+1
+Math.floor(1.22222)
+1
+
+Math.floor(Math.random() * 10)
+6
+Math.floor(Math.random() * 10)
+0
+Math.floor(Math.random() * 10)
+4
+Math.floor(Math.random() * 10)
+1
+
+document.body.appendChild(bgImage);
+
+append 가장 뒤에
+prepend 가장 앞에
+
+
+-----------------------------------------------------
+과제 제출 링크
+https://codesandbox.io/s/a09blueprint-forked-8bl2zj
