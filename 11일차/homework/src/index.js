@@ -1,0 +1,52 @@
+const colors = [
+  "#ef5777",
+  "#575fcf",
+  "#4bcffa",
+  "#34e7e4",
+  "#0be881",
+  "#f53b57",
+  "#3c40c6",
+  "#0fbcf9",
+  "#00d8d6",
+  "#05c46b",
+  "#ffc048",
+  "#ffdd59",
+  "#ff5e57",
+  "#d2dae2",
+  "#485460",
+  "#ffa801",
+  "#ffd32a",
+  "#ff3f34"
+];
+
+function randomColor() {
+  const random1 = colors[Math.floor(Math.random() * colors.length)];
+  const random2 = colors[Math.floor(Math.random() * colors.length)];
+  console.log(random1, random2);
+
+  //해설 보고 추가한 부분 ->
+  //색이 동일할 때는 함수 내부에 자신을 한번 더 호출하여 return 후 재실행되도록 한다
+  //이것을 재귀함수라고 한다.
+  //console.log로 같은 색일 때를 확인할 수 있도록 한 후
+  //재실행 되었는지를 확인하는 console.log를 추가해서 재확인 해보았습니다.
+  //결과는 같은 색이 나올 경우 재실행 되어 다른 색상만 출력되도록 하였습니다.
+  if( random1 === random2 ){
+    console.log("같은 색입니다.");
+    return randomColor();
+  }
+  console.log(random1, random2);
+  // <-
+
+  //코드 수정
+  /*
+  const gradient = document.querySelector("body");
+  gradient.style.background = `background: linear-gradient(to left, ${random1}, ${random2});`;
+  */
+  //이유 : 변수 설정없이 조금 더 간결한 코드 작성을 할 수 있었지만 다음날 다시 확인해보니 두줄로 작성된 코드를 한줄로 고쳤습니다.
+  //또한, ``안에 들어있던 background도 빼내어 앞으로 이동시켰습니다.
+  //정상작동 확인했습니다. 
+  document.body.style.background = `linear-gradient(to left, ${random1}, ${random2})`;
+}
+
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", randomColor);
