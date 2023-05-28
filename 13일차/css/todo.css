@@ -1,0 +1,94 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&display=swap');
+
+
+#main {
+    display: flex;
+    margin: 1000px auto 0;
+    width: 1250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-title{
+    font-weight: 500;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+#left {
+    width: 1800px;
+    margin-right: 60px;
+}
+
+#greeting {
+    font-size: 80px;
+    margin-bottom: 100px;
+    font-family: 'Raleway', sans-serif;;
+}
+
+#today-quote {
+    width: 100%;
+    padding: 20px;
+    font-weight: 300;
+    border-radius: 20px;
+}
+
+#quotes {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    vertical-align: center;
+}
+
+#right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60vh;
+    padding: 50px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#right .box-style {
+    width: 500px;
+    height: 90%;
+}
+
+.todo-style {
+    position: relative;
+    margin-top: 10px;
+}
+
+.todo-input:focus {
+    outline:none;
+}
+
+.todo-input {
+    margin-bottom: 15px;
+    width: 100%;
+    background: transparent;
+    border-width: 0;
+    border-bottom:  1px solid var(--secondary-color);
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.todo-list {
+    overflow: auto;
+    height: 92%;
+}
+
+.checkbtn {
+    position: absolute;
+    background: transparent;
+    color: var(--secondary-color);
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-width: 0;
+}

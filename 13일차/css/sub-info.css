@@ -1,0 +1,23 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500&display=swap');
+
+#sub-info:before {
+    width: 50px;
+    margin-right: 10px;
+    content: '';
+    border-bottom: 3.3px solid #1c1b1b;
+}
+
+#sub-info {
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 20px;
+}
+
+#weather, #clock, #city {
+    margin-right: 15px;
+}

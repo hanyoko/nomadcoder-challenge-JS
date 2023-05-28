@@ -1,52 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="./css/sub-info.css">
 </head>
 <body>
-    <div id="wrap">
-        <h2 id="clock">00:00:00</h2>
-        <form id="login-form" class="hidden">
-            <input
-                required 
-                maxlength="15"
-                type="text"
-                placeholder="What is your name" />
-            <!-- <button>Log In</button> -->
-            <input type="submit" value="Log In" />
-        </form>
-        <h1 id="greeting" class="hidden"></h1>
-        <!-- <a href="https://nomadcoders.co">Go to courses</a> -->
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" required />
-        </form>
-        <div id="list">
-            <ul id="todo-list">
-                <!-- 이렇게 생성되도록 할 것이다. -->
-                <!-- <li>
-                    <span>hello</span>
-                </li> -->
-            </ul>
-        </div>
-        <div id="quote">
-            <span></span>
-            <span></span>
-        </div>
-        <div id="weather">
-            <span></span>
-            <span></span>
-        </div>
+    <form id="login-form">
+        <h1>
+              Hello<i class="font-roboto">,</i><br />
+              <i class="transparent">Stranger<i class="font-roboto">.</i></i>
+        </h1>
+            <input id="inputbox" type="text" placeholder="Let me know who you are." onfocus="this.placeholder=''" onblur="this.placeholder='Let me know who you are.'"/>
+            <input id="inputbtn" type="submit" value="Enter">
+    </form>
+
+    <div id="sub-info">
+        <span id="city"></span>
+        <span id="weather"></span>
+        <time id="clock">00:00:00</time>
     </div>
-    
-    <script src="./js/greeting.js"></script>
-    <script src="./js/clock.js"></script>
-    <script src="./js/quotes.js"></script>
-    <script src="./js/background.js"></script>
-    <script src="./js/todo.js"></script>
-    <script src="./js/weather.js"></script>
+
+    <main id="main">
+        <section id="left">
+            <header>
+                <h2 id="greeting">
+                    <i class="transparent">Cheer Up <i class="font-roboto">!</i></i><br />
+                    <span id="saved-username"></span><i class="font-roboto">.</i>
+                </h2>
+            </header>
+            <div id="today-quote" class="glassmorphism">
+                <h3 class="sub-title">Today's Quote</h3>
+                <p id="quotes"></p>
+            </div>
+        </section>
+        <section id="right" class="glassmorphism">
+            <div>
+                <h3 class="sub-title">To Do List</h3>
+                <div class="box-style">
+                    <form class="todo-form">
+                    <input required class="todo-input" type="text">
+                    </form>
+                    <ul class="todo-list"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="./js/background.js"></script>
+    <script type="text/javascript" src="./js/quotes.js"></script>
+    <script type="text/javascript" src="./js/greeting.js"></script>
+    <script type="text/javascript" src="./js/clock.js"></script>
+    <script type="text/javascript" src="./js/weather.js"></script>
+    <script type="text/javascript" src="./js/todo.js"></script>
 </body>
 </html>
